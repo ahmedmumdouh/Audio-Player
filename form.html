@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		<style type="text/css">
+            body{
+                font-size: 25px ;
+            }
+            form{
+                text-align: center;
+            }
+            form div {
+                vertical-align: middle;
+            }
+
+            form div label {
+                vertical-align: middle;
+            }
+
+            form > div > div {
+                display: inline-block;
+            }
+            #audioApp{
+                text-align: center;
+                vertical-align: middle;
+                background-color: brown;
+                border-style: solid;
+                border-color: darkorchid;
+                border-width: 10px;
+                border-radius: 50px;
+            }
+            #audioState div,ul{
+                display: inline-block;
+                color: green;
+                text-align: center;
+            }
+
+            label {
+                display: inline-block;
+                width: 100px;
+                font-size: 16px;
+                padding: 5px;
+                margin: 5px;
+                color: blue;
+            }
+
+            input[type=text], input[type=range],input[type=password] ,input[type=number] ,input[type=email]{
+                display: inline-block;
+                font-size: 16px;
+                padding: 5px;
+                border-radius: 2px;
+                margin: 5px;
+                width: 250px;
+            }
+            input[type=submit]{
+                margin-left: 30%;
+                height: 40px;
+                width: 80px;
+            }
+            form output{
+                display: inline-block;
+                font-size: 15px;
+            }
+            
+
+
+		</style>
+		
+	</head>
+	<body>
+        <br><br>
+        <div id="audioApp">
+
+            <div id="audioPlayer">
+                <audio id="player" src="test.mp3" controls></audio>
+            </div>
+            <div id="audioState">
+                <lable>Playing : </lable><div id="curSong"></div> 
+                <lable>State :</lable><div id="curState"></div>
+            </div>
+            <button id="play">play</button>
+            <button id="repeat">Repeat</button>
+            <button id="shuffle">shuffle</button><br>
+            <input type="file" id="file" name="file" >
+            <button id="add">+</button>
+
+            <div id="audioList">
+                <ul>
+                    <li><a id="0">canon      </a><button>Del</button></li>
+                    <li><a id="1">dream      </a><button>Del</button></li>
+                    <li><a id="2">hero       </a><button>Del</button></li>
+                    <li><a id="3">mombasa    </a><button>Del</button></li>
+                    <li><a id="4">swan-lake  </a><button>Del</button></li>
+                </ul>
+            </div>
+        </div>
+        
+    
+		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="js/player.js"></script>
+	</body>
+</html>
